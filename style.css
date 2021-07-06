@@ -1,0 +1,437 @@
+/* CSS Document */
+html{
+	box-sizing: border-box;
+	font-size: 10px;
+	
+}
+
+*{
+margin:0;
+padding:0;
+
+}
+
+body{
+	font-family: 'Shippori Mincho', serif;
+	line-height: 1.7;
+	color: #333333;
+
+}
+
+
+a {
+	color: #333333;
+  text-decoration: none;
+}
+
+ul{
+	list-style: none;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+/*header*/
+
+.burger-btn,.burger-ul{
+	display:none;
+}
+
+.logo{
+	width: 200px;
+	height: auto;
+}
+
+
+
+.page-header{
+	display:flex;
+	 justify-content: space-between;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.main-nav-ul{
+	display: flex;
+}
+
+.main-nav-li{
+	font-size: 1.5rem;
+	font-weight: 600;
+	padding-left: 20px;
+}
+
+/*home*/
+
+#home{
+	padding: 40px;
+}
+
+.home-inner{
+	background: url("top_01.jpg");
+	background-size: cover;
+	background-position: top center;
+	height: 90vh;
+}
+
+.l-section{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+/*concept*/
+
+.concept-inner{
+	text-align: center;
+}
+
+.section-title{
+	font-size:3.8rem;
+	font-weight: 600;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.section-text{
+	line-height: 2.4;
+	font-size:1.8rem;
+	text-align: left;
+	padding-left: 24%;
+	padding-right: 24%;
+}
+
+/*feature*/
+
+.back-img{
+	background: url("lemonOrange-back.png");
+	background-size: cover;
+}
+
+.feature-inner{
+	text-align: center;
+}
+
+.items{
+	display: flex;
+	justify-content: center;
+	
+}
+
+.item{
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.item-title{
+	font-size: 1.8rem;
+	padding-top:20px;
+	padding-bottom:10px;
+}
+
+.item-text{
+	font-size: 1.5rem;
+	display: block;
+	margin: 0 auto;
+	text-align: left;
+	width: 200px;
+}
+
+.line-item{
+	display: inline-block;
+	margin-bottom: 30px;
+	 border-bottom: 3px dotted #333;
+}
+
+/*img*/
+.img-null-01{
+	padding-left: 200px;
+	padding-right: 30px;
+	
+}
+
+.img-null-02{
+	padding-left: 30px;
+	padding-right: 200px;
+	
+}
+
+.null-inner{
+	height: 600px;
+	}
+
+.inner-img-01{
+	background: url("img/inner-img_01.jpg");
+	background-size: cover;
+}
+
+.inner-img-02{
+	background: url("img/inner-img_02.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+
+/*shopping*/
+
+.shopping-inner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 160px;
+}
+
+
+/*faq*/
+#faq{
+	
+}
+
+.faq-inner{
+	text-align: center;
+	padding-bottom: 80px;
+}
+
+.faq-lists{
+	display: grid;
+	grid-template-columns: 400px 400px;
+	justify-content: center;
+	
+}
+
+.faq-list{
+	font-size: 1.5rem;
+	text-align: left;
+	padding: 4%;
+}
+
+.faq-Q{
+	font-weight: 600;
+	font-size: 1.8rem;
+	padding-bottom: 10px;
+}
+
+.faq-A{
+	font-size:1.5rem;
+}
+
+/*footer*/
+
+.page-footer{
+	color: #eda506;
+	font-weight: 600;
+	font-size:1.5rem;
+	text-align: center;
+	padding: 20px;
+}
+
+
+@media (max-width: 768px){
+	
+/*header*/
+	
+	.main-nav{
+		display: none;
+	}
+
+/*hamburger*/
+	
+/*----------------------------
+* メニュー開閉ボタン
+*----------------------------*/
+
+.burger-btn{
+  position: fixed;
+  top: 60px;
+  right: 60px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+	padding: 10px;
+}
+	
+/*----------------------------
+* メニュー本体
+*----------------------------*/
+.burger-ul{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.burger-li{
+  width: 100%;
+  height: auto;
+  padding: .5em 1em;
+  text-align: center;
+}
+	
+.burger-li a{
+	font-size:1.8rem;
+		 color: #333;
+	}
+
+/*----------------------------
+* アニメーション部分
+*----------------------------*/
+
+/* アニメーション前のメニューの状態 */
+.burger-ul{
+  transform: translateX(100vw);
+  transition: all .3s linear;
+}
+/* アニメーション後のメニューの状態 */
+.burger-ul.is-active{
+  transform: translateX(0);
+}
+
+
+
+	
+.back-img{
+		background-position: center;
+	}
+
+/*img*/
+
+.null-inner{
+	height: 300px;
+	}	
+	
+/*faq*/
+.faq-lists{
+	display: grid;
+	grid-template-columns: 300px 300px;
+	justify-content: center;
+	
+}
+	
+}
+
+@media (max-width: 500px){
+	
+	.burger-btn{
+		top:20px;
+		right: 20px;
+	}
+	
+
+
+.page-header{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+	
+	.back-img{
+		background-position: 20% 20%;
+	}
+
+	/*home*/
+	
+#home{
+	padding: 10px;
+}
+
+.home-inner{
+	background: url("img/top_01.jpg");
+	background-size: cover;
+	background-position: top center;
+	height: 60vh;
+}
+	
+	.logo{
+		width: 150px;
+	}
+	
+	.l-section{
+		padding-top:40px;
+		padding-bottom:40px;
+	}
+
+	/*concept*/
+	
+	
+.section-title{
+	font-size:2rem;
+	font-weight: 600;
+	padding: 20px;
+}
+
+.section-text{
+	line-height: 2.4;
+	font-size:1.5rem;
+	text-align: left;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+	
+	/*feature*/
+	
+	.items{
+		flex-direction: column;
+	}
+	
+	.item-text{
+		width: 240px;
+		margin-bottom: 20px;
+	}
+	
+	.img-null-01{
+	padding-left: 10px;
+	padding-right: 10px;
+	
+}
+
+.img-null-02{
+	padding-left: 10px;
+	padding-right: 10px;
+	
+}
+
+/*img*/
+.null-inner{
+	height: 200px;
+	}
+
+.inner-img-01{
+	background: url("inner-img_01.jpg");
+	background-size: cover;
+}
+
+.inner-img-02{
+	background: url("inner-img_02.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+	/*shopping*/
+	
+	.shopping-inner{
+		flex-direction: column;
+		margin-bottom: 80px;
+	}
+	
+	/*faq*/
+	
+	.faq-lists{
+	grid-template-columns: 240px;
+	
+}
+	
+	.faq-list{
+		padding: 30px 10px;
+	}
+	
+}
