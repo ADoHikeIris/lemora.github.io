@@ -162,12 +162,12 @@ img{
 	}
 
 .inner-img-01{
-	background: url("img/inner-img_01.jpg");
+	background: url("inner-img_01.jpg");
 	background-size: cover;
 }
 
 .inner-img-02{
-	background: url("img/inner-img_02.jpg");
+	background: url("inner-img_02.jpg");
 	background-size: cover;
 	background-position: center;
 }
