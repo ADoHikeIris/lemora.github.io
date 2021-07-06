@@ -345,7 +345,7 @@ img{
 }
 
 .home-inner{
-	background: url("img/top_01.jpg");
+	background: url("top_01.jpg");
 	background-size: cover;
 	background-position: top center;
 	height: 60vh;
